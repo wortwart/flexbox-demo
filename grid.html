@@ -7,39 +7,53 @@
 			display: -ms-grid;
 			-ms-grid-columns: 200px 25px 1fr;
 			-ms-grid-rows: 160px 25px 1fr 25px 200px;
+			display: grid;
+			grid-columns: 200px 25px 1fr;
+			grid-rows: 160px 25px 1fr 25px 200px;
 		}
 
 		#text_box {
 			-ms-grid-row: 3;
 			-ms-grid-column: 1;
 			-ms-grid-row-span: 3;
+			grid-row: 3;
+			grid-column: 1;
+			grid-row-span: 3;
 			background-color: orange;
 		}
 		#big_pic {
 			-ms-grid-row: 1;
 			-ms-grid-column: 3;
 			-ms-grid-row-span: 3;
+			grid-row: 1;
+			grid-column: 3;
+			grid-row-span: 3;
 			background-color: yellow;
 		}
 		#photos {
 			-ms-grid-row: 5;
 			-ms-grid-column: 3;
+			grid-row: 5;
+			grid-column: 3;
 			background-color: red;
 		}
 		#logo {
 			-ms-grid-row: 1;
 			-ms-grid-column: 1;
+			grid-row: 1;
+			grid-column: 1;
 			background-color: blue;
 		}
 	</style>
 </head>
 
 <body>
-	<h1>Grid-Layout &ndash; funktioniert nur im IE</h1>
+	<h1>Grid Layout</h1>
+	<p>Works currently only in IE, Edge, or special browser settings (see <a href="http://caniuse.com/#feat=css-grid">Can I Use</a>)</p>
 	<main>
 		<div id="text_box" class="orange">Text</div>
-		<div id="big_pic" class="red">Foto</div>
-		<div id="photos" class="blue">Galerie</div>
+		<div id="big_pic" class="red">Photo</div>
+		<div id="photos" class="blue">Gallery</div>
 		<div id="logo" class="green">
 			<div id="logotype">Logo</div>
 			<div id="pagedesc">Lightbox</div>
